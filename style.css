@@ -1,0 +1,195 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&family=Catamaran:wght@500&family=Nunito:wght@300&family=Roboto+Slab&family=Roboto:ital,wght@1,500&display=swap');
+*{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s;
+
+}
+#container{
+    height: 100vh;
+    
+    display: grid;
+    align-items: center;
+    
+ 
+}
+#box{
+   width: 80%;
+   margin: 0 auto;
+   height: 80vh;
+
+
+}
+
+#search{
+  
+    padding: 1vw;
+    box-shadow: 0 0 5px 3px rgb(145, 144, 144);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#city{
+   font-size: 1rem;
+   padding: 1rem;
+   border-radius:5px;
+   background: transparent;
+ 
+       
+ 
+}
+#weatherAPI{
+ 
+   border-radius: 10px;
+   cursor: pointer;
+   width: 30%;
+   border: none;
+   padding: 1.1rem;
+   
+}
+#weatherAPI:hover{
+   background-color: burlywood;
+}
+
+
+ #deg sub{
+    font-weight: 100;
+    font-size: 10px;
+ }
+ #locationHead{
+   font-size: 2rem;
+   text-align: center;
+   padding: 1rem;
+ }
+ #deg sup{
+    font-size: 10px;
+ }
+ #flex-box{
+   background-color: #eae7e7;
+    padding: 1rem;
+    transform-origin: top;
+    transform: scaleY(0);
+   
+    
+ 
+  }
+ #flex-box.collapse{
+    transform: scaleY(1);
+    transition:  0.5s ease;
+}
+ #flex-box-childs{
+    padding: 1rem;
+    width: 50%;
+  
+ }
+ #two-boxes{
+    display: flex;
+   }
+ #two-boxes div{
+    width: 50%;
+   }
+ #box1{
+    display: grid;
+    justify-content: end;
+    font-size: 2rem;
+ 
+ }
+  
+ 
+ #box2 h1{
+    font-size: 3rem;
+ }
+ #flex-box-childs:nth-child(2) p{
+    border-bottom: 1px solid rgb(202, 195, 195);
+    padding: 0.5rem;
+    display: flex;justify-content: space-between;
+    
+ }
+ #more{
+    text-align: end;
+    cursor: pointer;
+    font-weight: 600;
+    
+
+ }
+ #moreDetails{
+   visibility: hidden;
+  
+ 
+  
+   transform: scaleY(0);
+   
+   transform-origin: top;
+   
+ 
+ }
+ #moreDetails.makeVisible{
+   visibility: visible;
+ }
+ #moreDetails.collapse{
+  
+  
+   transform: scaleY(1);
+   transition: 0.5s ease;
+  
+ 
+ }
+ #windDegreeSup{
+   font-size: 8px;
+}
+ @media  screen and (max-width:760px) {
+    *{
+        font-size: 8px;
+    }
+    #search{
+      font-size: 1.2rem;
+    }
+    #credit{
+      width: 60px;
+      height: 25px;
+    }
+    
+    #flex-box{
+      padding: 0.3rem;
+    }
+    #flex-box-childs{
+      padding: 0.5rem;
+    }
+    
+    #box1 img{
+        width: 40px;
+        height: 40px;
+     }
+     #box{
+      width: 90%;
+      height: fit-content;
+      
+   
+  
+  }
+  #deg sub{
+ 
+   font-size: 4px;
+}
+#deg sup{
+   font-size: 6px;
+}
+#o{
+   font-size: 6px;
+}
+#windDegreeSup{
+   font-size: 5px;
+}
+    
+ }
+ @media  screen and (max-width:1020px) and (min-width:760px) {
+   
+
+ }
+ 
+ 
