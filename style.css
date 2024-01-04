@@ -34,11 +34,13 @@
     justify-content: space-between;
     align-items: center;
 }
+ 
 #city{
    font-size: 1rem;
    padding: 1rem;
    border-radius:5px;
    background: transparent;
+   width: 30%;
  
        
  
@@ -143,16 +145,31 @@
    font-size: 8px;
 }
  @media  screen and (max-width:760px) {
+
+   
     *{
         font-size: 8px;
     }
     #search{
       font-size: 1.2rem;
+   
+      flex-wrap: wrap;
+      
     }
     #credit{
       width: 60px;
       height: 25px;
     }
+    #city{
+      width: 60%;
+      margin: 0.5rem 0;
+    }
+   
+    #weatherAPI{
+      width: 100%;
+       
+    }
+     
     
     #flex-box{
       padding: 0.3rem;
