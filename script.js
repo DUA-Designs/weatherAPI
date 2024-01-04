@@ -30,7 +30,7 @@ function dataFromAPI(){
     
       
     
-     const response=fetch(`http://api.weatherapi.com/v1/current.json?key=2f1a5f47063b4d3c96390406240201&q=${city.value}`);
+     const response=fetch(`https://api.weatherapi.com/v1/current.json?key=2f1a5f47063b4d3c96390406240201&q=${city.value}`);
     
      response.then((res)=>res.json()).then((data)=>{
        
